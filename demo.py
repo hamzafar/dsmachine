@@ -40,15 +40,4 @@ def make_features(tab, visited = set(), depth = 0, max_depth = -1):
 
 	print("%s at depth:%d - visited: %s" % (str(tab.__table__).upper(), depth, [str(visit.__table__).upper() for visit in visited]))
 
-# make_features(Products)
-
-# print(Orders.__table__.foreign_keys)
-# print(dir(Orders.__table__))
-# print(Orders.__table__.)
-
-print(inspect(Orders).relationships.items())
-
-for k, v in inspect(Orders).relationships.items():
-	# print(v, dir(v))
-	# print(v, dir(v.target))
-	print(v, v.target.name)
+make_features(Products)
